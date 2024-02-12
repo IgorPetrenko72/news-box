@@ -5,8 +5,8 @@
   "main": "index.js",
   "homepage": "https://github.com/IgorPetrenko72/news-box",
   "scripts": {
-    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
+    "prod": "NODE_ENV=production webpack --mode=production",
+    "build": "NODE_ENV=production webpack --config config/webpack.prod.js",
     "dev": "webpack-dev-server --mode=development"
   },
   "repository": {
