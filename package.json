@@ -3,10 +3,10 @@
   "version": "2.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://IgorPetrenko72.github.io/news-box",
+  "homepage": "https://github.com/IgorPetrenko72/news-box",
   "scripts": {
-    "start": "webpack --mode=development",
-    "prod": "webpack --mode=production",
+    "start": "cross-env NODE_ENV=development webpack serve --config config/webpack.dev.js",
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.prod.js",
     "dev": "webpack-dev-server --mode=development"
   },
   "repository": {
@@ -37,6 +37,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-webpack-plugin": "^4.0.1",
+    "gh-pages": "^6.1.1",
     "handlebars-loader": "^1.7.3",
     "html-webpack-plugin": "^5.5.4",
     "mini-css-extract-plugin": "^2.7.6",
