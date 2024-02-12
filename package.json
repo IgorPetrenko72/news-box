@@ -5,7 +5,6 @@
   "main": "index.js",
   "homepage": "https://IgorPetrenko72.github.io/news-box",
   "scripts": {
-    "prod": "NODE_ENV=production webpack --mode=production",
     "build": "webpack",
     "dev": "webpack-dev-server --mode=development",
     "predeploy": "npm run build",
